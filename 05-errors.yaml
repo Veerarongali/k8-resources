@@ -6,7 +6,7 @@ spec:
   containers:
     - name: nginx
       image: ngindjhfgshfb #imagePullBackOff due to wrong image name, cannot pull from registry
-      
+
+
     # - name: almalinux
     #   image: almalinux:9 #crashLoopBackOff due to missing command #command: ["sleep", "1000"]
-
