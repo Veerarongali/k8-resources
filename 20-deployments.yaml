@@ -22,8 +22,8 @@ spec:
         project: roboshop
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+        - name: nginx
+          image: nginx:latest
 ---
 apiVersion: v1
 kind: Service
@@ -44,7 +44,7 @@ kind: Service
 metadata:
   name: nginx-headles
 spec:
-  # if a service clusterIP then it is called as headless service
+  # if a service clusterIP none then it is called as headless service
   clusterIP: None
   selector:
     purpose: headless-svc-demo
